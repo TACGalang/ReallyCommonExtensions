@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD405456212BA7C900E9248B /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD405455212BA7C900E9248B /* UILabelExtensions.swift */; };
 		DDD1CA4D2122BF6C008479C9 /* ReallyCommonExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD1CA4B2122BF6C008479C9 /* ReallyCommonExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDD1CA5D2122BF8D008479C9 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD1CA542122BF8D008479C9 /* StringExtensions.swift */; };
 		DDD1CA5E2122BF8D008479C9 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD1CA552122BF8D008479C9 /* DateExtensions.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD405455212BA7C900E9248B /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		DDD1CA482122BF6C008479C9 /* ReallyCommonExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReallyCommonExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD1CA4B2122BF6C008479C9 /* ReallyCommonExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReallyCommonExtensions.h; sourceTree = "<group>"; };
 		DDD1CA4C2122BF6C008479C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				DDD1CA5A2122BF8D008479C9 /* UIViewExtensions.swift */,
 				DDD1CA5B2122BF8D008479C9 /* UIFontsExtensions.swift */,
 				DDD1CA5C2122BF8D008479C9 /* UIColorExtensions.swift */,
+				DD405455212BA7C900E9248B /* UILabelExtensions.swift */,
 			);
 			path = "UI Extensions";
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				DDD1CA5E2122BF8D008479C9 /* DateExtensions.swift in Sources */,
 				DDD1CA5F2122BF8D008479C9 /* NSAttributedStringExtensions.swift in Sources */,
 				DDD1CA632122BF8D008479C9 /* UIFontsExtensions.swift in Sources */,
+				DD405456212BA7C900E9248B /* UILabelExtensions.swift in Sources */,
 				DDD1CA622122BF8D008479C9 /* UIViewExtensions.swift in Sources */,
 				DDD1CA602122BF8D008479C9 /* UITableViewExtensions.swift in Sources */,
 				DDD1CA642122BF8D008479C9 /* UIColorExtensions.swift in Sources */,
