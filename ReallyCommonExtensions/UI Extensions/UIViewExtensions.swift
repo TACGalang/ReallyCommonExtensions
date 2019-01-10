@@ -12,6 +12,7 @@ public enum GradientDirection {
     case rightToLeft
     case topToBottom
     case bottomToTop
+    case custom
 }
 
 public extension UIView {
@@ -25,7 +26,9 @@ public extension UIView {
      */
     public func create(gradientBackgroundFromFirstColor firstColor: UIColor,
                 toSecondColor secondColor: UIColor,
-                inDirection direction: GradientDirection) {
+                inDirection direction: GradientDirection,
+                withCustomStartPoint startPoint:CGPoint? = nil,
+                withCustomEndPoint endPoint:CGPoint? = nil) {
         
         self.layer.sublayers?.first?.removeFromSuperlayer()
         
@@ -44,6 +47,26 @@ public extension UIView {
         case .bottomToTop:
             gradient.startPoint = CGPoint(x: 0.5, y: 1.0)
             gradient.endPoint = CGPoint(x: 0.5, y: 0.0)
+        case .custom:
+            
+            if let startingPoint = startPoint, let endingPoint = endPoint {
+                
+                gradient.startPoint = startingPoint
+                gradient.endPoint = endingPoint
+            } else {
+                
+                if startPoint == nil {
+                    
+                    print("Error: Custom starting point is nil")
+                }
+                
+                if endPoint == nil {
+                    
+                    print("Error: Custom ending point is nil")
+                }
+                
+                return
+            }
         default:
             break
         }
