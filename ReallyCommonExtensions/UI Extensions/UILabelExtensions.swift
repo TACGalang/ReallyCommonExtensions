@@ -21,7 +21,7 @@ public extension UILabel {
         
         if let attributedString = attributedText?.mutableCopy() as? NSMutableAttributedString {
             
-            let kernAttr: [NSAttributedStringKey : Any] = [.kern: value]
+            let kernAttr: [NSAttributedString.Key : Any] = [.kern: value]
             attributedString.addAttributes(kernAttr, range: NSRange(location: 0, length: selfString.count))
             attributedText = attributedString
         }

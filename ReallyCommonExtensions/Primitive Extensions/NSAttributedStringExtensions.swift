@@ -38,11 +38,11 @@ public extension NSAttributedString {
                 let traits = htmlFont.fontDescriptor.symbolicTraits
                 var descrip = htmlFont.fontDescriptor.withFamily(fontFamily)
                 
-                if (traits.rawValue & UIFontDescriptorSymbolicTraits.traitBold.rawValue) != 0 {
+                if (traits.rawValue & UIFontDescriptor.SymbolicTraits.traitBold.rawValue) != 0 {
                     descrip = descrip.withSymbolicTraits(.traitBold)!
                 }
                 
-                if (traits.rawValue & UIFontDescriptorSymbolicTraits.traitItalic.rawValue) != 0 {
+                if (traits.rawValue & UIFontDescriptor.SymbolicTraits.traitItalic.rawValue) != 0 {
                     descrip = descrip.withSymbolicTraits(.traitItalic)!
                 }
                 
