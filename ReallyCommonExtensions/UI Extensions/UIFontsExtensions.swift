@@ -14,7 +14,7 @@ public extension UIFont {
      ## Example Parameter:
      - (fontName: "StringFont", regularSize: 16.0, optionalSize: 32.0)
      */
-    public convenience init(withFontName fontName:String,
+    convenience init(withFontName fontName:String,
                      andRegularSize regularSize:CGFloat,
                      withOptionalSizeToAdd optionalSize:CGFloat = 5.0) {
         

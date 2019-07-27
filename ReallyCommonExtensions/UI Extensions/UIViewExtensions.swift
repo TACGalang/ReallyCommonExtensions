@@ -24,7 +24,7 @@ public extension UIView {
      - parameter secondColor: The second UIColor
      - parameter direction: Direction of the gradient, example is leftToRight.
      */
-    public func create(gradientBackgroundFromFirstColor firstColor: UIColor,
+    func create(gradientBackgroundFromFirstColor firstColor: UIColor,
                 toSecondColor secondColor: UIColor,
                 inDirection direction: GradientDirection,
                 withCustomStartPoint startPoint:CGPoint? = nil,
@@ -81,7 +81,7 @@ public extension UIView {
      - parameter views: Dictionary of views.
      - parameter metrics: Dictionary of NSNumbers.
      */
-    public func addConstraintsWithVisualFormat(format: String, views: [String:Any], metrics: [String:Any]? = nil) {
+    func addConstraintsWithVisualFormat(format: String, views: [String:Any], metrics: [String:Any]? = nil) {
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: [], metrics: metrics, views: views))
     }

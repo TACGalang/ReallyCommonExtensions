@@ -10,7 +10,7 @@ import UIKit
 public extension UITableView {
     
     /** Reload tableView with specific animations. */
-    public func reloadData(with animation: UITableView.RowAnimation) {
+    func reloadData(with animation: UITableView.RowAnimation) {
         reloadSections(IndexSet(integersIn: 0..<numberOfSections), with: animation)
     }
 }

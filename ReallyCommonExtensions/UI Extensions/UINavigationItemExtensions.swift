@@ -33,7 +33,7 @@ public extension UINavigationItem {
      - parameter defaultPosition: Default position is true where is located from the left side of navigation bar.
      - parameter selector: Optional selector where the actions take place for those who use it.
      */
-    public func make(sideMenuButtonWithTarget target:Any?,
+    func make(sideMenuButtonWithTarget target:Any?,
               withCustomIcon customIcon:UIImage? = nil,
               isDefaultPosition defaultPosition:Bool = true,
               andSelector selector:Selector?) {
@@ -60,7 +60,7 @@ public extension UINavigationItem {
      - parameter defaultPosition: Default position is true where is located from the left side of navigation bar.
      - parameter selector: Optional selector where the actions take place for those who use it.
      */
-    public func make(searchButtonItemWithTarget target: Any,
+    func make(searchButtonItemWithTarget target: Any,
               withCustomIcon customIcon: UIImage? = nil,
               isDefaultPosition defaultPosition: Bool = true,
               andSelector selector:Selector?) {
@@ -87,7 +87,7 @@ public extension UINavigationItem {
      - parameter defaultPosition: Default position is true where is located from the left side of navigation bar.
      - parameter selector: Optional selector where the actions take place for those who use it.
      */
-    public func make(actionButtonItemWithTarget target: Any,
+    func make(actionButtonItemWithTarget target: Any,
               withCustomIcon customIcon: UIImage? = nil,
               isDefaultPosition defaultPosition:Bool = true,
               andSelector selector:Selector?) {
@@ -114,7 +114,7 @@ public extension UINavigationItem {
      - parameter defaultPosition: Default position is true where is located from the left side of navigation bar.
      - parameter selector: Optional selector where the actions take place for those who use it.
      */
-    public func make(doneButtonItemWithTarget target:Any?,
+    func make(doneButtonItemWithTarget target:Any?,
               withCustomIcon customIcon:UIImage? = nil,
               isDefaultPosition defaultPosition:Bool = true,
               andSelector selector: Selector?) {
@@ -141,7 +141,7 @@ public extension UINavigationItem {
      - parameter defaultPosition: Default position is true where is located from the left side of navigation bar.
      - parameter selector: Optional selector where the actions take place for those who use it.
      */
-    public func make(cancelButtonItemWithTarget target:Any?,
+    func make(cancelButtonItemWithTarget target:Any?,
               withCistomIcon customIcon:UIImage? = nil,
               isDefaultPosition defaultPosition: Bool = true,
               andSelector selector:Selector?) {

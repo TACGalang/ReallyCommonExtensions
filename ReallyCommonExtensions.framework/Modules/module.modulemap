@@ -1,0 +1,11 @@
+framework module ReallyCommonExtensions {
+  umbrella header "ReallyCommonExtensions.h"
+
+  export *
+  module * { export * }
+}
+
+module ReallyCommonExtensions.Swift {
+    header "ReallyCommonExtensions-Swift.h"
+    requires objc
+}

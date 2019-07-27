@@ -16,7 +16,7 @@ public extension String {
      - parameter minimumCount: Optional Int whether this string should have a minimum character.
      - parameter maximumCount: Optional Int whether this string should have a maximum character.
      */
-    public func isValid(enableEmailVerification isEmailVerify:Bool,
+    func isValid(enableEmailVerification isEmailVerify:Bool,
                  hasMinimumCount minimumCount:Int? = nil,
                  hasMaximumCount maximumCount:Int? = nil) -> (isValid:Bool, details:String?) {
         
@@ -61,7 +61,7 @@ public extension String {
      
      - return: JSON[Dictionary<String, String>]?
      */
-    public func getJson() -> [Dictionary<String,String>]? {
+    func getJson() -> [Dictionary<String,String>]? {
         
         let data = self.data(using: .utf8)!
         

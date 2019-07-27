@@ -14,7 +14,7 @@ public extension Date {
      ## Example Format:
      - 2012-11-16
      */
-    public var commonDateFormat: String {
+    var commonDateFormat: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         return  formatter.string(from: self as Date)
@@ -25,7 +25,7 @@ public extension Date {
      ## Example Format:
      - 2012-11-16 12:00:00
      */
-    public var commonTimeStampFormat: String {
+    var commonTimeStampFormat: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-d HH:mm:ss"
         return formatter.string(from: self as Date)
@@ -36,7 +36,7 @@ public extension Date {
      ## Example Format:
      - November 16, 2012
      */
-    public var endUserDateFormat: String {
+    var endUserDateFormat: String {
         
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM dd, yyyy"
@@ -50,7 +50,7 @@ public extension Date {
      ## Example Return
      - Date(2012-11-16 00:00:00)
      */
-    public func get(dateFromString dateString:String) -> Date {
+    func get(dateFromString dateString:String) -> Date {
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -65,7 +65,7 @@ public extension Date {
      ## Example Return:
      - Date(2012-11-16 12:00:00)
     */
-    public func get(timeStampFromString dateString:String) -> Date {
+    func get(timeStampFromString dateString:String) -> Date {
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"

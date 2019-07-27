@@ -14,7 +14,7 @@ public extension UIColor {
      ## Example Format:
      - "#36363636"
      */
-    public convenience init(hexString: String) {
+    convenience init(hexString: String) {
         
         let hexString: String = (hexString as NSString).trimmingCharacters(in: .whitespacesAndNewlines)
         let scanner          = Scanner(string: hexString as String)
@@ -41,7 +41,7 @@ public extension UIColor {
      ## Example Parameter:
      - (red: 0, green: 0, blue: 0)
      */
-    public convenience init(red: Int, green: Int, blue: Int) {
+    convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")
         assert(blue >= 0 && blue <= 255, "Invalid blue component")
@@ -53,7 +53,7 @@ public extension UIColor {
      ## Example Parameter:
      - (withNewSaturation saturation: 0, brightnest: 0)
      */
-    public func modified(withNewSaturation saturation: CGFloat, brightnest: CGFloat) -> UIColor {
+    func modified(withNewSaturation saturation: CGFloat, brightnest: CGFloat) -> UIColor {
         
         var currentHue: CGFloat = 0.0
         var currentSaturation: CGFloat = 0.0

@@ -15,7 +15,7 @@ public extension UILabel {
      
      - parameter value: Distance between the characters, default value is 1.15
      */
-    public func addCharactersSpacing(_ value: CGFloat = 1.15) {
+    func addCharactersSpacing(_ value: CGFloat = 1.15) {
         
         let selfString = text ?? ""
         

@@ -16,7 +16,7 @@ public extension NSAttributedString {
      - parameter font: Optional font.
      - parameter useDocumentFontSize: Default is true.
     */
-    public convenience init(htmlString html: String,
+    convenience init(htmlString html: String,
                             font: UIFont? = nil,
                             useDocumentFontSize: Bool = true) throws {
         
