@@ -168,7 +168,7 @@ public extension UINavigationItem {
      - parameter defaultPosition: Default position is true where is located from the left side of navigation bar.
      - parameter selector: Optional selector where the actions take place for those who use it.
      */
-    public func make(logoutButtonWithTarget target:Any?,
+    func make(logoutButtonWithTarget target:Any?,
               withCustomIcon customIcon:UIImage? = nil,
               isDefaultPosition defaultPosition:Bool = true,
               andSelector selector: Selector?) {
