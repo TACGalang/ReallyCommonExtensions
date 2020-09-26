@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "ReallyCommonExtensions"
-s.version      = "1.2.2"
+s.version      = "1.2.3"
 s.summary      = "List of mostly used extensions."
 s.description  = "Common extensions is a list of mostly used extensions on my projects."
 s.homepage     = "https://github.com/TACGalang/ReallyCommonExtensions.git"
